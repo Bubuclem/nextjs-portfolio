@@ -1,8 +1,8 @@
-import About from "@/components/about";
-import Education from "@/components/education";
-import Work from "@/components/work";
+import About from "@/app/components/about";
+import Education from "@/app/components/education";
+import Work from "@/app/components/work";
 
-import { getAbout, getEducation, getWork } from "@/components/prisma-actions";
+import { getAbout, getEducation, getWork } from "@/app/components/prisma-actions";
 
 export default async function Home() {
   const aboutData = await getAbout() || { id: 0, name: null, description: null };
